@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+import app1. views as app
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('hello/<str:name>', app.hello),
+    path('class/view/', app.ClaseUnoApiView.as_view()),
 ]
