@@ -18,9 +18,11 @@ class SecondJobSerializer(serializers.ModelSerializer):
     class Meta:
         model = Job
         field = ('id', 'name')
-
+'''
 class MySerializer(serializers.Serializers):
     first_name = serializers.CharField(max_length = 32)
     last_name = serializers.CharField(max_length = 32)
-    namme = serializers.CharField(max_length = 32)
+    name = serializers.CharField(max_length = 32)
     age = serializers.IntegerField()
+
+'''
