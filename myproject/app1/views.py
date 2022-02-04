@@ -37,5 +37,5 @@ class PersonCreateAPIView(APIView):
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
     #se define la funcion con el metodo que se va a utilizar
-        #return Response({'message':'another view'})
+        #return Response({ 'message':'another view'})
 # Create your views here.
