@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/<str:name>', app.hello),
     path('person/', app.PersonListAPIView.as_view()),
+    path('person/create', app.PersonCreateAPIView.as_view())
 ]
